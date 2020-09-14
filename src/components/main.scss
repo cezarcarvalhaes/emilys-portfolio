@@ -1,0 +1,89 @@
+@import 'bulma/sass/utilities/initial-variables';
+
+//these override bulma's initial vars
+$magenta: #d3355f;
+$white: #fff;
+$green: #aed335;
+$seafoam: #35d3a9;
+$purple: #5a35d3;
+$black: #0d0305;
+$gray: #817e8b;
+$light-gray: #cecbd8;
+
+$primary: $magenta;
+$secondary: $seafoam;
+
+.navbar .navbar-menu {
+	box-shadow: none !important;
+}
+
+.content .taglist {
+	list-style: none;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 1.5rem;
+	margin-top: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	li {
+		padding: 0 2rem 1rem 0;
+		margin-bottom: 1.5rem;
+		margin-top: 0;
+	}
+}
+
+// Helper Classes
+.full-width-image-container {
+	width: 100vw;
+	height: 400px;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin: 2em -50vw;
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.full-width-image {
+	width: 100vw;
+	height: 400px;
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.margin-top-0 {
+	margin-top: 0 !important;
+}
+
+.navbar-item .icon {
+	color: $primary;
+}
+// Override for use of svg's from https://simpleicons.org/
+.icon svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: currentColor;
+}
+.navbar-brand .navbar-item.logo {
+	padding: 0 1rem;
+}
+footer.footer {
+	padding: 3rem 0rem 0rem;
+	background-color: transparent;
+}
+//Menu overrides
+$menu-item-hover-color: $black !important;
+$menu-item-hover-background-color: $black;
+$menu-item-active-color: $white;
+$menu-item-active-background-color: $white;
+$menu-list-border-left: 1px solid $white;
+
+@import '~bulma';
